@@ -1,0 +1,50 @@
+{
+  "contract_001": {
+    "id": "contract_001",
+    "platform": "evm",
+    "compiler": "v0.8.23",
+    "hash": "0xabc123...",
+    "verified": true,
+    "warnings": ["solidity_bug"],
+    "provenance": "external",
+    "omega_decision": "BLOCK",
+    "omega_score": 0.3,
+    "reasons": ["compiler antigo", "warnings detectados", "origem não confiável"]
+  },
+  "repo_matverse_core": {
+    "id": "repo_matverse_core",
+    "platform": "github",
+    "compiler": null,
+    "hash": "0xdef456...",
+    "verified": true,
+    "warnings": [],
+    "provenance": "trusted",
+    "omega_decision": "PASS",
+    "omega_score": 1.0,
+    "reasons": ["ok"]
+  },
+  "matverse_space": {
+    "id": "matverse_space",
+    "platform": "hf",
+    "compiler": null,
+    "hash": "0xghi789...",
+    "verified": false,
+    "warnings": [],
+    "provenance": "trusted",
+    "omega_decision": "REVIEW",
+    "omega_score": 0.6,
+    "reasons": ["não verificado"]
+  },
+  "contract_002": {
+    "id": "contract_002",
+    "platform": "evm",
+    "compiler": "v0.8.32",
+    "hash": "0xjkl012...",
+    "verified": true,
+    "warnings": [],
+    "provenance": "trusted",
+    "omega_decision": "PASS",
+    "omega_score": 1.0,
+    "reasons": ["ok"]
+  }
+}
