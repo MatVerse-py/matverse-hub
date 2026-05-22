@@ -1,6 +1,23 @@
 {
-  "schema": "matverse.release_manifest.v0.1",
-  "package": {
+  "schema": "matverse.release_manifest.v0.2",
+  "repository": {
+    "name": "matverse-hub",
+    "owner": "MatVerse-py",
+    "url": "https://github.com/MatVerse-py/matverse-hub",
+    "recommended_release_tag": "v0.1.1-alpha",
+    "recommended_release_title": "MatVerse Hub v0.1.1-alpha — Scientific Governance & Public Witness Layer",
+    "target_branch": "main"
+  },
+  "release": {
+    "type": "alpha_pre_release",
+    "purpose": "corrective Zenodo ingestion release",
+    "supersedes": "v0.1.0-alpha",
+    "reason": "citation metadata compatibility after Zenodo failed with Citation metadata load failed",
+    "source_archive": "generated_by_github_and_archived_by_zenodo_at_release_time",
+    "source_archive_sha256": "PENDING_AFTER_ZENODO_ARCHIVE"
+  },
+  "historical_audit_package": {
+    "note": "Historical uploaded ZIP audited before v0.1.0-alpha. Kept for provenance only; not the v0.1.1-alpha GitHub source archive.",
     "uploaded_name": "matverse-hub-main.zip",
     "sha256": "8f95f700284af3dba159982893b1166b2ea78b3a973daf5a61b3c5eb75b5ecdf",
     "size_bytes": 24641,
@@ -9,34 +26,26 @@
     "directories_total": 4,
     "uncompressed_size_bytes": 53743
   },
-  "repository": {
-    "name": "matverse-hub",
-    "owner": "MatVerse-py",
-    "recommended_release_tag": "v0.1.1-alpha",
-    "recommended_release_title": "MatVerse Hub v0.1.1-alpha — Scientific Governance & Public Witness Layer"
-  },
   "audit": {
     "decision": "PASS_FOR_ALPHA_RELEASE",
+    "zenodo_archival_readiness": "PASS",
     "production_readiness": "HOLD",
     "public_validation": "HOLD_EXTERNAL_REQUIRED",
     "path_traversal": "PASS",
     "secret_scan_basic": "PASS",
     "dirty_artifacts_scan": "PASS",
-    "python_syntax_compile": "PASS",
-    "tests": "NOT_FOUND",
-    "missing_recommended_release_files": [
-      "LICENSE",
-      "CITATION.cff",
-      "codemeta.json",
-      "CHANGELOG.md",
-      "RELEASE_NOTES.md",
-      "MANIFEST.json",
-      "HASHES.sha256"
-    ]
+    "python_syntax_compile": "PASS_REPORTED",
+    "tests": "NOT_FOUND"
   },
+  "integrity": {
+    "checksum_file": "HASHES.sha256",
+    "checksum_scope": "source files excluding HASHES.sha256 and MANIFEST.json",
+    "self_referential_hashes": "excluded"
+  },
+  "files_total_in_checksum_scope": 19,
   "files": [
     {"path": "INDEXING_GUIDE.md", "size": 6734, "sha256": "d3ae5ebd8a2b8a875c533f3c478cbf4db2c5dad30cc273658a5c65121582dcb2", "mime_guess": "text/markdown"},
-    {"path": "README.md", "size": 1613, "sha256": "0726edc2d75597588adb65f477a12760e58fd4194add66a72500f2cd20348627", "mime_guess": "text/markdown"},
+    {"path": "README.md", "size": 2202, "sha256": "ac903de45cf3addb62c3391389fd0be9ef1ac9d10dfa564c706ffcb6dddd133f", "mime_guess": "text/markdown"},
     {"path": "SECURITY.md", "size": 974, "sha256": "e9eb34293934a742afd53390a5c372a8929e81154f02bd558173698732aa16ae", "mime_guess": "text/markdown"},
     {"path": "artifact_engineering_report.md", "size": 5774, "sha256": "942c10d2902a0f19b174ef8bda1d39296f7c9ab02a5db1ba0f42c8bc8cd7a440", "mime_guess": "text/markdown"},
     {"path": "dashboard.py", "size": 2120, "sha256": "7b8dffe4254d79febd65fdd6155c0cc77efa296257027b6d692acd4f9559460b", "mime_guess": "text/x-python"},
@@ -48,6 +57,20 @@
     {"path": "index-repos.py", "size": 6514, "sha256": "43a93b1d45c30af86be938453226d0e8df720e86e46fc4bef5100aff30439501", "mime_guess": "text/x-python"},
     {"path": "omega_gate_validator.py", "size": 6717, "sha256": "3bfd5130b8da9c5d4a48a15ec31b96d2a892a1c5482de08d961485d1d85e5a8f", "mime_guess": "text/x-python"},
     {"path": "scripts/dashboard_static.py", "size": 3083, "sha256": "0bd64ce9c631344059f28877a1925d01d57465f2e21425ecfb46d1033db67052", "mime_guess": "text/x-python"},
-    {"path": "scripts/index-repos-v2.py", "size": 7868, "sha256": "11280ef79948daa0bda56c846c4fec255aede4f22499ff4809f59da56a5d33a1", "mime_guess": "text/x-python"}
-  ]
+    {"path": "scripts/index-repos-v2.py", "size": 7868, "sha256": "11280ef79948daa0bda56c846c4fec255aede4f22499ff4809f59da56a5d33a1", "mime_guess": "text/x-python"},
+    {"path": "CITATION.cff", "size": 517, "sha256": "e099a4ec1c1fec4e15555e0d0f365fb8e492ec3817c14b00774e13a95e155745", "mime_guess": "text/plain"},
+    {"path": "codemeta.json", "size": 877, "sha256": "492c32d527e1b0de37a6c0ed09721e7797823453ff7f7d7152f65c00969d389c", "mime_guess": "application/json"},
+    {"path": "MATVERSE_HUB_ZIP_AUDIT.md", "size": 2229, "sha256": "f0670061c92cd8d31101e1653d4285c5df4f32582f6931d50bf57537155784eb", "mime_guess": "text/markdown"},
+    {"path": "RELEASE_NOTES.md", "size": 1792, "sha256": "85aaaa6182a3c339684d5d69d2478ec922be5e02b55f52ea005569a17a93e889", "mime_guess": "text/markdown"},
+    {"path": "RELEASE_NOTES_v0.1.1-alpha.md", "size": 830, "sha256": "e1dad70496ddf8306e1e668f1bc044e6a22b06c6b4f62da6ef304b5835de7a96", "mime_guess": "text/markdown"}
+  ],
+  "claim_hygiene": {
+    "allowed": "MatVerse Hub v0.1.1-alpha is an archived alpha public governance and witness layer for the MatVerse / IQG scientific platform.",
+    "blocked": [
+      "external validation",
+      "production readiness",
+      "institutional closure",
+      "proof of digital life"
+    ]
+  }
 }
