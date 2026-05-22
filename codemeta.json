@@ -2,7 +2,7 @@
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "name": "MatVerse Hub",
-  "version": "0.1.0-alpha",
+  "version": "0.1.1-alpha",
   "description": "Alpha public governance and witness layer for the MatVerse / IQG scientific platform, including artifact engineering, Ω-Gate admissibility validation, indexing workflow, and Hugging Face Space integration.",
   "codeRepository": "https://github.com/MatVerse-py/matverse-hub",
   "programmingLanguage": [
@@ -29,6 +29,5 @@
       "familyName": "Areas"
     }
   ],
-  "license": "NOASSERTION",
   "developmentStatus": "alpha"
 }
