@@ -1,5 +1,13 @@
 # MatVerse Hub: Central de Governança e Prova Pública
 
+[![Release v0.1.0-alpha](https://img.shields.io/badge/Release-v0.1.0--alpha-orange?style=flat-square)](https://github.com/MatVerse-py/matverse-hub/releases/tag/v0.1.0-alpha)
+[![DOI Zenodo](https://img.shields.io/badge/DOI-Pendente-blue?style=flat-square)](https://zenodo.org)
+[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red?style=flat-square)](SECURITY.md)
+
+**Autor**: Mateus Alves Arêas — [ORCID: 0009-0008-2973-4047](https://orcid.org/0009-0008-2973-4047)
+
+> ⚠️ Este software está em estágio **alpha**. Não é recomendado para uso em produção.
+
 Este repositório é o núcleo de governança e prova pública do organismo MatVerse. Ele consolida a engenharia de artefatos, a validação de admissibilidade via Ω-Gate e a integração com plataformas de deploy soberano.
 
 ## Estrutura do Repositório
