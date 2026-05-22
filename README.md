@@ -1,6 +1,6 @@
 # MatVerse Hub: Central de Governança e Prova Pública
 
-[![Release v0.1.0-alpha](https://img.shields.io/badge/Release-v0.1.0--alpha-orange?style=flat-square)](https://github.com/MatVerse-py/matverse-hub/releases/tag/v0.1.0-alpha)
+[![Release v0.1.1-alpha](https://img.shields.io/badge/Release-v0.1.1--alpha-orange?style=flat-square)](https://github.com/MatVerse-py/matverse-hub/releases/tag/v0.1.1-alpha)
 [![DOI Zenodo](https://img.shields.io/badge/DOI-Pendente-blue?style=flat-square)](https://zenodo.org)
 [![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red?style=flat-square)](SECURITY.md)
 

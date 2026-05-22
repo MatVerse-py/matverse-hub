@@ -12,8 +12,8 @@
   "repository": {
     "name": "matverse-hub",
     "owner": "MatVerse-py",
-    "recommended_release_tag": "v0.1.0-alpha",
-    "recommended_release_title": "MatVerse Hub v0.1.0-alpha — Scientific Governance & Public Witness Layer"
+    "recommended_release_tag": "v0.1.1-alpha",
+    "recommended_release_title": "MatVerse Hub v0.1.1-alpha — Scientific Governance & Public Witness Layer"
   },
   "audit": {
     "decision": "PASS_FOR_ALPHA_RELEASE",
