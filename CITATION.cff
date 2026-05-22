@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from the Zenodo DOI generated for the GitHub release."
+title: "MatVerse Hub"
+version: "0.1.0-alpha"
+type: software
+authors:
+  - family-names: "Areas"
+    given-names: "Mateus"
+abstract: "MatVerse Hub is an alpha public governance and witness layer for the MatVerse / IQG scientific platform, including artifact engineering, Ω-Gate admissibility validation, indexing workflow, and Hugging Face Space integration."
+repository-code: "https://github.com/MatVerse-py/matverse-hub"
+license: "NOASSERTION"
+keywords:
+  - MatVerse
+  - IQG
+  - Omega Gate
+  - artifact engineering
+  - scientific software
+  - evidence governance
+  - causal continuity
