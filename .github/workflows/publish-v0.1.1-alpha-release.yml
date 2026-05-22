@@ -1,0 +1,72 @@
+name: Publish v0.1.1-alpha release
+
+on:
+  workflow_dispatch:
+    inputs:
+      upload_asset:
+        description: "Attach clean ZIP asset if present in repository root"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  publish-release:
+    name: Publish GitHub pre-release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate release files
+        run: |
+          set -euo pipefail
+          test -f RELEASE_NOTES_v0.1.1-alpha.md
+          test -f CITATION.cff
+          test -f codemeta.json
+          test -f MANIFEST.json
+          test -f HASHES.sha256
+
+      - name: Publish pre-release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          tag="v0.1.1-alpha"
+          title="MatVerse Hub v0.1.1-alpha — Scientific Governance & Public Witness Layer"
+          notes_file="RELEASE_NOTES_v0.1.1-alpha.md"
+          asset_file="MATVERSE_sober_clean_release_v0_1_1_alpha.zip"
+
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release edit "$tag" \
+              --title "$title" \
+              --notes-file "$notes_file" \
+              --prerelease \
+              --target main
+          else
+            gh release create "$tag" \
+              --target main \
+              --title "$title" \
+              --notes-file "$notes_file" \
+              --prerelease
+          fi
+
+          if [[ "${{ inputs.upload_asset }}" == "true" ]]; then
+            if [[ -f "$asset_file" ]]; then
+              gh release upload "$tag" "$asset_file" --clobber
+            else
+              echo "Clean asset not present; release published without extra asset."
+            fi
+          fi
