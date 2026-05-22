@@ -13,6 +13,8 @@
     "purpose": "corrective Zenodo ingestion release",
     "supersedes": "v0.1.0-alpha",
     "reason": "citation metadata compatibility after Zenodo failed with Citation metadata load failed",
+    "zenodo_doi": "10.5281/zenodo.20343556",
+    "doi_url": "https://doi.org/10.5281/zenodo.20343556",
     "source_archive": "generated_by_github_and_archived_by_zenodo_at_release_time",
     "source_archive_sha256": "PENDING_AFTER_ZENODO_ARCHIVE"
   },
