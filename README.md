@@ -1,7 +1,7 @@
 # MatVerse Hub: Central de Governança e Prova Pública
 
 [![Release v0.1.1-alpha](https://img.shields.io/badge/Release-v0.1.1--alpha-orange?style=flat-square)](https://github.com/MatVerse-py/matverse-hub/releases/tag/v0.1.1-alpha)
-[![DOI Zenodo](https://img.shields.io/badge/DOI-Pendente-blue?style=flat-square)](https://zenodo.org)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20343556.svg)](https://doi.org/10.5281/zenodo.20343556)
 [![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red?style=flat-square)](SECURITY.md)
 
 **Autor**: Mateus Alves Arêas — [ORCID: 0009-0008-2973-4047](https://orcid.org/0009-0008-2973-4047)
