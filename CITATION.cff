@@ -8,6 +8,9 @@ authors:
     given-names: "Mateus"
     orcid: "https://orcid.org/0009-0008-2973-4047"
 repository-code: "https://github.com/MatVerse-py/matverse-hub"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20343556"
 keywords:
   - "MatVerse"
   - "IQG"
