@@ -1,0 +1,53 @@
+{
+  "schema": "matverse.release_manifest.v0.1",
+  "package": {
+    "uploaded_name": "matverse-hub-main.zip",
+    "sha256": "8f95f700284af3dba159982893b1166b2ea78b3a973daf5a61b3c5eb75b5ecdf",
+    "size_bytes": 24641,
+    "entries_total": 18,
+    "files_total": 14,
+    "directories_total": 4,
+    "uncompressed_size_bytes": 53743
+  },
+  "repository": {
+    "name": "matverse-hub",
+    "owner": "MatVerse-py",
+    "recommended_release_tag": "v0.1.0-alpha",
+    "recommended_release_title": "MatVerse Hub v0.1.0-alpha — Scientific Governance & Public Witness Layer"
+  },
+  "audit": {
+    "decision": "PASS_FOR_ALPHA_RELEASE",
+    "production_readiness": "HOLD",
+    "public_validation": "HOLD_EXTERNAL_REQUIRED",
+    "path_traversal": "PASS",
+    "secret_scan_basic": "PASS",
+    "dirty_artifacts_scan": "PASS",
+    "python_syntax_compile": "PASS",
+    "tests": "NOT_FOUND",
+    "missing_recommended_release_files": [
+      "LICENSE",
+      "CITATION.cff",
+      "codemeta.json",
+      "CHANGELOG.md",
+      "RELEASE_NOTES.md",
+      "MANIFEST.json",
+      "HASHES.sha256"
+    ]
+  },
+  "files": [
+    {"path": "INDEXING_GUIDE.md", "size": 6734, "sha256": "d3ae5ebd8a2b8a875c533f3c478cbf4db2c5dad30cc273658a5c65121582dcb2", "mime_guess": "text/markdown"},
+    {"path": "README.md", "size": 1613, "sha256": "0726edc2d75597588adb65f477a12760e58fd4194add66a72500f2cd20348627", "mime_guess": "text/markdown"},
+    {"path": "SECURITY.md", "size": 974, "sha256": "e9eb34293934a742afd53390a5c372a8929e81154f02bd558173698732aa16ae", "mime_guess": "text/markdown"},
+    {"path": "artifact_engineering_report.md", "size": 5774, "sha256": "942c10d2902a0f19b174ef8bda1d39296f7c9ab02a5db1ba0f42c8bc8cd7a440", "mime_guess": "text/markdown"},
+    {"path": "dashboard.py", "size": 2120, "sha256": "7b8dffe4254d79febd65fdd6155c0cc77efa296257027b6d692acd4f9559460b", "mime_guess": "text/x-python"},
+    {"path": "docs/INDEXING_GUIDE_v2.md", "size": 1397, "sha256": "1daca76b8b605e340108967fd8a57598feb7db8a461e1e0404ac030477485063", "mime_guess": "text/markdown"},
+    {"path": "hf_space/README.md", "size": 2637, "sha256": "c863e5e966be63951f12467ab6893d6e50f8026eebaf78c6fe600c39e63a850d", "mime_guess": "text/markdown"},
+    {"path": "hf_space/app.py", "size": 7062, "sha256": "80f1d0b4a2b4d1125d9a98fb4f1fc01e107fb83a80559e7082f3b15d24dc69f3", "mime_guess": "text/x-python"},
+    {"path": "hf_space/proof_data.json", "size": 1205, "sha256": "b9801993eb9e4daacb37703ca86413e75a73dd7d4d92ad5a7a963f35432a3262", "mime_guess": "application/json"},
+    {"path": "hf_space/requirements.txt", "size": 45, "sha256": "e790f037a3bd8984d3c17281ee478854b5ba56a5992a0dac7b15c1103aefd0b7", "mime_guess": "text/plain"},
+    {"path": "index-repos.py", "size": 6514, "sha256": "43a93b1d45c30af86be938453226d0e8df720e86e46fc4bef5100aff30439501", "mime_guess": "text/x-python"},
+    {"path": "omega_gate_validator.py", "size": 6717, "sha256": "3bfd5130b8da9c5d4a48a15ec31b96d2a892a1c5482de08d961485d1d85e5a8f", "mime_guess": "text/x-python"},
+    {"path": "scripts/dashboard_static.py", "size": 3083, "sha256": "0bd64ce9c631344059f28877a1925d01d57465f2e21425ecfb46d1033db67052", "mime_guess": "text/x-python"},
+    {"path": "scripts/index-repos-v2.py", "size": 7868, "sha256": "11280ef79948daa0bda56c846c4fec255aede4f22499ff4809f59da56a5d33a1", "mime_guess": "text/x-python"}
+  ]
+}
