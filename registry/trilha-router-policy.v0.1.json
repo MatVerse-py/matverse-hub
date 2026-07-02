@@ -1,0 +1,1 @@
+{"allowed_decisions":["PASS","HOLD","ESCALATE","QUARANTINE","HISTORICAL"],"automatic_canonical_promotion":false,"causal_order":["SEMENTE","MMNB","CASSANDRA","COG"],"no_external_effect_without_cog_prerequisites":true,"no_invention_on_lacuna":true,"policy_sha256":"c55ed6770650c0b3d69fb3afd02e60ef1d06a12ce6a4b6969cea34f48d2d9e91","router_version":"0.1.0"}
