@@ -1,0 +1,56 @@
+schema_version: 1.0.0
+registry_id: matverse-github-drive-part-1
+status: DRAFT_RECONCILIATION
+
+invariants:
+  - A discovered source is not automatically a validated claim.
+  - A present hash or signature is not independently verified until recomputed.
+  - Drive remains the document-origin surface.
+  - GitHub remains the code, test, workflow, release, and replay surface.
+  - No source is promoted without explicit reconciliation and a receipt.
+
+repository_index:
+  - repository: MatVerse-py/matverse-hub
+    role: public_atlas_and_registry_surface
+    state: OBSERVED_ACTIVE
+  - repository: MatVerse-py/acoa
+    role: public_research_and_governance_surface
+    state: OBSERVED_ACTIVE
+  - repository: MatVerse-py/matverse-u-kernel
+    role: constitutional_kernel_candidate
+    state: PRESENT_NOT_INDEPENDENTLY_VERIFIED
+  - repository: MatVerse-py/organismo
+    role: historical_reference
+    state: ARCHIVED
+
+drive_source_index:
+  - title: MATVERSE CANONICO.txt
+    role: candidate_canonical_source
+    state: CANDIDATE_REQUIRES_RECONCILIATION
+  - title: MatVerse ACOA Arquitetura de Segurança Completa.txt
+    role: candidate_security_and_governance_specification
+    state: CANDIDATE_REQUIRES_RECONCILIATION
+  - title: CASSANDRA RUN.txt
+    role: candidate_runtime_lineage_record
+    state: HISTORICAL_OR_DESIGN_SOURCE
+  - title: MatVerse —3 (2).docx
+    role: historical_governance_reference
+    state: HISTORICAL_REFERENCE
+
+required_private_intake:
+  - export_original_bytes
+  - compute_sha256
+  - inspect_for_sensitive_material
+  - extract_claims_and_invariants
+  - map_to_code_tests_or_specification
+  - review_contradictions
+  - record_governance_receipt
+
+promotion_rule:
+  requires:
+    - artifact_hash
+    - provenance
+    - claim_mapping
+    - contradiction_review
+    - human_decision
+    - receipt
